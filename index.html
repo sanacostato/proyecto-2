@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/assets/js/main.js"></script>
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <title>Proyecto 2</title>
@@ -35,9 +35,37 @@
               <input type="text" class="form-control border border-dark" id="nombreProcedimiento" placeholder="Procedimiento">
             </div>
           </form>
-          <button type="button" class="btn btn-primary btn-lg" id="agregar">Agregar paciente</button>
-
+          <button type="button" class="btn btn-primary btn-lg" onclick="guardar()">Agregar paciente</button>
+        
       </main>
+    </div>
+    
+        <div class="col-md-8 offset-md-2 ">
+            <h3>Lista de pacientes</h3>
+            <table class="table table-bordered" aria-describedby="paciente">
+                <thead class="thead-dark">
+                    <tr>
+                        <th width="30%">Paciente</th>
+                        <th width="30%">Procedimiento</th>
+                        <th width="40%">Acciones</th>
+                        <!-- encabezado tabla -->
+                    </tr>
+                </thead> 
+                <tbody id="tblInfo">
+                    <!-- <tr class="text-center font-weight-bold">
+                        <td colspan="2">NO HAY REGISTROS</td>
+                      </tr>
+                    <tr>
+                         el contenido de la tabla -->
+                        <!-- <td>Pelicula 1</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr> --> 
+                </tbody>
+            </table>
+        </div>
     
       <footer class="mastfoot mt-lg-5">
         <div class="inner">
@@ -47,4 +75,5 @@
     </div>
 
     </body>
+    <script src="/assets/js/main.js"></script>
 </html>
