@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px){
+ 
+    *{
+        background-color: rgb(166, 140, 198);
+    }  
+
+}
+
+@media screen and (max-width: 600px){
+*{
+    background-color: antiquewhite;
+}
+button {
+    height: 90%;
+    width: 90%;
+}
+
+
+}

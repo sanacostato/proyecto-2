@@ -30,12 +30,7 @@ function actualizarStorage(){
 }
 
 function mostrarPacientes(){
-    if ( nombrePaciente.value === '') {
-        alert("Debes ingresar los datos");
-    
-      }else{
-        actualizarStorage();
-      }
+
       
     if(paciente.length === 0 ){
         tblInfo.innerHTML = `<tr><td colspan="3" class="text-center font-weight-bold">No hay registros</td></tr>`;
